@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chart Application
 
-## Getting Started
+This is a TypeScript and Next.js application designed to visualize chart data with interactive capabilities. Users can zoom in and out of the chart and drag it for better navigation.
 
-First, run the development server:
+## Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project structure is organized into the following folders:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### `src/features/chart/controllers`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **ChartController.ts**: Manages the main functionality of the chart, including event handling, drawing, and scaling operations.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### `src/features/chart/controllers/helpers`
 
-## Learn More
+- **mouse-event-handler.ts**: Handles mouse events such as dragging and clicking on the canvas.
 
-To learn more about Next.js, take a look at the following resources:
+### `src/views/`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contains page views for the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+To run the application locally:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Start the development server with `npm run dev`.
+4. Open the application in your browser at `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Technologies Used
+
+- TypeScript
+- Next.js
+- HTML5 Canvas API
